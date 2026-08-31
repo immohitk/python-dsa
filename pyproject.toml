@@ -9,7 +9,7 @@ description = "A structured Python repository for learning and implementing data
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
-    {name = "Mohit Kumar"}
+    { name = "Mohit Kumar" }
 ]
 dependencies = []
 
@@ -26,5 +26,6 @@ python_classes = ["Test*"]
 python_functions = ["test_*"]
 addopts = "-v"
 
-[tool.setuptools]
-include-package-data = true
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["arrays*"]
