@@ -2,20 +2,26 @@
 
 A structured Python repository for learning, implementing, testing, and documenting Data Structures and Algorithms.
 
-The project focuses on building strong Python programming and problem-solving skills through clean implementations, complexity analysis, practical examples, and automated tests.
+This repository contains practical implementations of common data structures and algorithms, along with automated tests and complexity analysis.
+
+The goal is to strengthen Python programming, problem-solving, algorithmic thinking, and technical interview fundamentals.
 
 ---
 
-## Objectives
+## Purpose
+
+The purpose of this repository is to:
 
 - Strengthen Python programming fundamentals
 - Practice Object-Oriented Programming (OOP)
-- Understand and implement common data structures
+- Understand how common data structures work
 - Implement important algorithms from scratch
 - Improve logical thinking and problem-solving skills
 - Understand time and space complexity
-- Write clean, maintainable, and testable code
+- Practice writing clean and testable code
 - Build a practical reference for technical interviews
+
+This repository is primarily a **Python DSA learning, practice, and interview-preparation repository**.
 
 ---
 
@@ -25,13 +31,12 @@ The project focuses on building strong Python programming and problem-solving sk
 - Object-Oriented Programming (OOP)
 - Python Type Hints
 - pytest
-- Command-Line Interface (CLI)
 - Git
 - GitHub
 
 ---
 
-## Topics Covered
+## Completed Topics
 
 ### Data Structures
 
@@ -41,118 +46,155 @@ The project focuses on building strong Python programming and problem-solving sk
 - Stacks
 - Queues
 - Hash Tables
-- Trees
-- Heaps
-- Graphs
 
-### Algorithms
+### Searching Algorithms
 
-- Searching
-- Sorting
-- Recursion
-- Greedy Algorithms
-- Dynamic Programming
-- Graph Algorithms
+- Linear Search
+- Iterative Binary Search
+- Recursive Binary Search
 
-### Problem Solving
+### Sorting Algorithms
 
-The problems directory will contain progressively challenging problems.
-
-Each important problem will include:
-
-1. Problem statement
-2. Approach
-3. Implementation
-4. Time complexity
-5. Space complexity
-6. Test cases
-
----
-
-## Project Structure
-
-python-dsa/
-│
-├── arrays/
-├── strings/
-├── linked_lists/
-├── stacks/
-├── queues/
-├── hash_tables/
-├── recursion/
-├── searching/
-├── sorting/
-├── trees/
-├── graphs/
-├── heaps/
-├── greedy/
-├── dynamic_programming/
-│
-├── problems/
-├── playground/
-├── tests/
-├── docs/
-│
-├── README.md
-├── pyproject.toml
-└── .gitignore
+- Bubble Sort
+- Selection Sort
+- Insertion Sort
+- Merge Sort
+- Quick Sort
 
 ---
 
 ## Testing
 
-Tests will be written using pytest.
+The repository uses **pytest** for automated testing.
 
-Testing will cover:
+Tests cover:
 
-- Correct output
+- Correct results
 - Edge cases
-- Invalid input where applicable
+- Empty inputs
+- Missing values
+- Invalid operations
 - Data structure behavior
 - Algorithm correctness
 
-Run the test suite with:
+### Current Test Status
 
+**87 / 87 tests passing**
+
+```text
+87 passed
+```
+
+Run the complete test suite with:
+
+```bash
 pytest
+```
 
 ---
 
-## DSA Playground
+## Project Structure
 
-The playground directory will contain an interactive CLI for experimenting with implemented data structures and algorithms.
-
-Planned interface:
-
-================================
-        PYTHON DSA LAB
-================================
-
-1. Arrays
-2. Searching
-3. Sorting
-4. Linked Lists
-5. Stack
-6. Queue
-7. Trees
-8. Graphs
-9. Exit
-
-================================
-
-The playground will expand as new topics are implemented.
+```text
+python-dsa/
+│
+├── arrays/
+│   └── array_operations.py
+│
+├── strings/
+│   └── string_operations.py
+│
+├── linked_lists/
+│   └── linked_list.py
+│
+├── stacks/
+│   └── stack.py
+│
+├── queues/
+│   └── queue.py
+│
+├── hash_tables/
+│   └── hash_table.py
+│
+├── searching/
+│   └── search_algorithms.py
+│
+├── sorting/
+│   └── sort_algorithms.py
+│
+├── recursion/              # Planned
+├── trees/                  # Planned
+├── heaps/                  # Planned
+├── graphs/                 # Planned
+├── greedy/                 # Planned
+├── dynamic_programming/   # Planned
+│
+├── problems/               # Planned
+├── playground/             # Planned
+├── docs/                   # Planned
+│
+├── tests/
+│
+├── README.md
+├── pyproject.toml
+└── .gitignore
+```
 
 ---
 
-## Development Roadmap
+## How the Repository Is Organized
 
-### Phase 1 - Project Foundation
+Each major topic has its own Python package.
 
-- Set up Python project
-- Configure testing
-- Configure project metadata
-- Create documentation structure
+For example:
 
-### Phase 2 - Core Data Structures
+```text
+arrays/
+└── array_operations.py
+
+tests/
+└── test_array_operations.py
+```
+
+The implementation file contains the actual data structure or algorithm.
+
+The corresponding test file verifies that the implementation works correctly.
+
+This keeps the repository organized and makes each topic easy to understand and revisit.
+
+---
+
+## Development Approach
+
+Every topic follows the same development process:
+
+```text
+Plan
+  ↓
+Create Structure
+  ↓
+Implement
+  ↓
+Write Tests
+  ↓
+Run pytest
+  ↓
+Fix Issues
+  ↓
+Commit
+  ↓
+Push to GitHub
+```
+
+The goal is not only to write algorithms, but also to practice a professional development workflow.
+
+---
+
+# Current Roadmap
+
+## Phase 1 — Core Data Structures
+
+Completed:
 
 - Arrays
 - Strings
@@ -161,85 +203,325 @@ The playground will expand as new topics are implemented.
 - Queues
 - Hash Tables
 
-### Phase 3 - Core Algorithms
+**Status: COMPLETED**
 
+---
+
+## Phase 2 — Searching
+
+Completed:
+
+- Linear Search
+- Iterative Binary Search
+- Recursive Binary Search
+
+**Status: COMPLETED**
+
+---
+
+## Phase 3 — Sorting
+
+Completed:
+
+- Bubble Sort
+- Selection Sort
+- Insertion Sort
+- Merge Sort
+- Quick Sort
+
+**Status: COMPLETED**
+
+---
+
+## Phase 4 — Recursion
+
+Planned topics:
+
+- Recursion fundamentals
+- Base cases
+- Recursive problem solving
+- Recursive searching
+- Recursive traversal
+- Recursion-based problems
+
+**Status: PLANNED**
+
+---
+
+## Phase 5 — Trees
+
+Planned topics:
+
+- Binary Trees
+- Binary Search Trees
+- Preorder Traversal
+- Inorder Traversal
+- Postorder Traversal
+- Level-order Traversal
 - Searching
-- Sorting
-- Recursion
+- Insertion
+- Tree-based problems
 
-### Phase 4 - Advanced Data Structures
+**Status: PLANNED**
 
-- Trees
-- Heaps
-- Graphs
+---
 
-### Phase 5 - Advanced Algorithms
+## Phase 6 — Heaps
 
-- Greedy Algorithms
-- Dynamic Programming
-- Graph Algorithms
+Planned topics:
 
-### Phase 6 - Problem Solving
+- Min Heap
+- Max Heap
+- Heap insertion
+- Heap extraction
+- Heapify
+- Priority Queue concepts
+- Heap-based problems
 
-- Easy problems
-- Intermediate problems
-- Advanced problems
+**Status: PLANNED**
+
+---
+
+## Phase 7 — Graphs
+
+Planned topics:
+
+- Graph representation
+- Adjacency List
+- Adjacency Matrix
+- Breadth-First Search (BFS)
+- Depth-First Search (DFS)
+- Visited-node tracking
+- Connected components
+- Basic path exploration
+
+**Status: PLANNED**
+
+---
+
+## Phase 8 — Greedy Algorithms
+
+Planned topics:
+
+- Greedy strategy
+- Activity Selection
+- Interval-based problems
+- Representative greedy problems
 - Complexity analysis
 
-### Phase 7 - Interactive Playground
-
-- Build CLI interface
-- Add algorithm demonstrations
-- Add practical examples
-- Add interactive inputs
-
-### Phase 8 - Quality and Documentation
-
-- Automated tests
-- Code cleanup
-- Documentation
-- Examples
-- Performance notes
-- Final GitHub presentation
+**Status: PLANNED**
 
 ---
 
-## Complexity Analysis
+## Phase 9 — Dynamic Programming
 
-Important implementations will document their computational complexity.
+Planned topics:
 
-Example:
+- Dynamic Programming fundamentals
+- Memoization
+- Tabulation
+- Overlapping subproblems
+- Optimal substructure
+- Representative DP problems
 
-Binary Search
+**Status: PLANNED**
 
+---
+
+## Phase 10 — Interview Problems
+
+The `problems/` directory will contain selected interview-style problems.
+
+Each important problem should contain:
+
+1. Problem statement
+2. Approach
+3. Implementation
+4. Time complexity
+5. Space complexity
+6. Test cases
+
+Problems will be organized by topic and difficulty.
+
+**Status: PLANNED**
+
+---
+
+## DSA Playground
+
+The `playground/` directory is planned as an optional interactive CLI for experimenting with implemented data structures and algorithms.
+
+Possible interface:
+
+```text
+================================
+        PYTHON DSA LAB
+================================
+
+1. Arrays
+2. Strings
+3. Linked Lists
+4. Searching
+5. Sorting
+6. Stack
+7. Queue
+8. Hash Tables
+9. Trees
+10. Graphs
+11. Exit
+
+================================
+```
+
+The playground will expand as useful topics are implemented.
+
+**Status: PLANNED**
+
+---
+
+## Documentation
+
+The `docs/` directory is planned for useful reference material such as:
+
+- Time complexity
+- Space complexity
+- Data structure comparisons
+- Algorithm explanations
+- Interview notes
+- Practical examples
+- Performance notes
+
+**Status: PLANNED**
+
+---
+
+# Complexity Analysis
+
+Important implementations will include time and space complexity.
+
+For example:
+
+### Binary Search
+
+```text
 Time Complexity: O(log n)
 Space Complexity: O(1)
+```
 
-This connects each implementation with algorithmic reasoning.
-
----
-
-## Current Status
-
-Work in Progress
-
-This repository is being developed as a structured Python Data Structures and Algorithms learning and portfolio project.
+Complexity analysis connects the implementation with the reasoning behind algorithm selection.
 
 ---
 
-## Future Improvements
+# What This Repository Demonstrates
 
-- More advanced algorithms
-- Additional problem sets
-- Algorithm visualizations
-- Performance comparisons
+The completed repository is intended to demonstrate:
+
+- Python programming
+- Data structure fundamentals
+- Algorithm implementation
+- Problem-solving ability
+- OOP concepts
+- Python type hints
+- Error and edge-case handling
+- Automated testing with pytest
+- Time and space complexity awareness
+- Clean project organization
+- Git and GitHub workflow
+
+---
+
+# Current Progress
+
+## Completed
+
+```text
+Arrays              ✅
+Strings             ✅
+Linked Lists        ✅
+Stacks              ✅
+Queues              ✅
+Hash Tables         ✅
+Searching           ✅
+Sorting             ✅
+```
+
+## Planned
+
+```text
+Recursion           🔜
+Trees               🔜
+Heaps               🔜
+Graphs              🔜
+Greedy Algorithms   🔜
+Dynamic Programming 🔜
+Interview Problems  🔜
+Playground          🔜
+Documentation       🔜
+```
+
+## Test Status
+
+```text
+87 / 87 tests passing
+```
+
+---
+
+# Development Philosophy
+
+This repository focuses on **understanding rather than simply collecting code**.
+
+Every implementation should be:
+
+- Understandable
+- Testable
+- Explainable
+- Properly documented
+- Reasonably efficient
+
+New topics should be added only when they provide meaningful learning or interview value.
+
+---
+
+# Future Improvements
+
+As the repository grows, possible improvements include:
+
+- More DSA implementations
+- More interview problems
 - More automated tests
-- Interactive learning examples
+- Complexity documentation
+- Practical examples
+- Performance comparisons
+- Algorithm demonstrations
+- Interactive CLI experiments
+- Better documentation
+
+These improvements will be added progressively rather than simply increasing the number of files.
 
 ---
 
-## Author
+# Final Goal
 
-Mohit Kumar
+The final `python-dsa` repository should be a clean and organized demonstration of Python Data Structures and Algorithms.
+
+It should allow someone visiting the repository to understand:
+
+1. What data structures and algorithms have been implemented
+2. How they work
+3. How they are tested
+4. Their time and space complexity
+5. How the project is organized
+6. What topics are planned for future development
+
+The repository is **not intended to be a single application**.
+
+It is a practical **Python DSA learning, practice, and interview-preparation laboratory**.
+
+---
+
+# Author
+
+**Mohit Kumar**
 
 GitHub: https://github.com/immohitk
