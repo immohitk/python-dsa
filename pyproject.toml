@@ -28,4 +28,4 @@ addopts = "-v"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["arrays*", "strings*"]
+include = ["arrays*", "strings*", "linked_lists*"]
